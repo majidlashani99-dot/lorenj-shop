@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>پنل مدیریت لُرنج</title>
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<main id="login" class="login" hidden>
+  <form id="loginForm" autocomplete="on">
+    <h1>ورود مدیر</h1>
+    <label>نام کاربری<input name="user" autocomplete="username" required></label>
+    <label>رمز عبور<input name="pass" type="password" autocomplete="current-password" required></label>
+    <p class="err" id="loginErr" role="alert"></p>
+    <button class="btn">ورود</button>
+  </form>
+</main>
+<div id="app" hidden>
+  <header class="bar"><b>پنل لُرنج</b>
+    <nav id="tabs"></nav>
+    <button class="ghost" id="out">خروج</button>
+  </header>
+  <section id="view"></section>
+</div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

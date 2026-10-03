@@ -1,0 +1,1 @@
+{ "name": "lorenj", "version": "1.0.0", "private": true, "scripts": { "start": "node server.js", "reset-admin": "node server.js --reset-admin" }, "engines": { "node": ">=18" } }

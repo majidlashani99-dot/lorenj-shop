@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لُرنج | برنج دورود لرستان</title>
+<meta name="description" content="لُرنج؛ برنج دورود لرستان در بسته‌بندی ۱، ۵ و ۱۰ کیلویی؛ کشت‌شده با آب ذوب‌شده برف و هوای خنک دورود.">
+<meta name="theme-color" content="#123a27">
+<link rel="icon" type="image/png" href="img/logo-green.png">
+<!-- وقتی آنلاین شدید (یا روی هاست) این فونت‌ها خودکار لود می‌شوند؛ آفلاین از پوشه fonts/ استفاده می‌شود -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" data-theme="dark">
+  <a class="nav__brand" href="#top" aria-label="لُرنج، بازگشت به بالا">
+    <img class="nav__logo nav__logo--cream" src="img/logo-cream.png" alt="">
+    <img class="nav__logo nav__logo--green" src="img/logo-green.png" alt="">
+  </a>
+  <nav class="nav__links" aria-label="منوی اصلی">
+    <a href="#shop">محصولات</a>
+    <a href="#wholesale">خرید عمده</a>
+    <a href="#calc">محاسبه‌گر مصرف</a>
+    <a href="#faq">سوالات</a>
+  </nav>
+  <button class="nav__cart" type="button" data-cart-open aria-label="باز کردن سبد خرید">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+    <span class="nav__count" data-cart-count>۰</span>
+  </button>
+</header>
+
+<main>
+
+<!-- ───────── صحنه اول: زوم اسکرولی ───────── -->
+<section class="hero" id="top" data-theme="dark" aria-label="معرفی لرنج">
+  <div class="hero__stage">
+    <div class="hero__world" data-world aria-hidden="true"><div class="hero__photo"></div><i class="hero__spot"></i></div>
+    <img class="hero__logo" src="img/logo-cream.png" alt="لُرنج">
+    <p class="hero__tag">بسته‌ای که از دل کوهستان می‌آید</p>
+    <div class="hero__bag">
+      <img class="hero__face hero__face--front" src="img/bag-hero-front.png" alt="بسته برنج لرنج">
+      <img class="hero__face hero__face--back" src="img/bag-back.png" alt="پشت بسته برنج لرنج؛ دستور پخت و ویژگی‌ها">
+    </div>
+    <div class="hero__scrim"></div>
+    <p class="cap cap--back">پشت هر بسته، دستور پخت و ویژگی‌ها.</p>
+    <p class="cap cap--end">حالا بسته‌تان را انتخاب کنید.</p>
+    <div class="hero__cue" aria-hidden="true"><span>اسکرول کنید تا پشت بسته را ببینید</span><i></i></div>
+  </div>
+</section>
+
+<!-- ───────── فروشگاه: انتخاب سایز با تغییر شکل بسته ───────── -->
+<section class="shop" id="shop" data-theme="light" aria-label="خرید">
+  <div class="shop__head">
+    <h2>بسته خودتان را انتخاب کنید</h2>
+    <p>با تغییر سایز، شکل و وزن بسته هم عوض می‌شود.</p>
+    <div class="notice"><b>اطلاع‌رسانی</b><span>بزودی امکان خرید ۴ قسطه فراهم می‌گردد.</span></div>
+  </div>
+
+  <div class="shop__grid">
+    <div class="shop__stage" data-stage>
+      <div class="shop__spot"></div>
+      <div class="shop__bagwrap" data-bagwrap>
+        <img class="shop__bag" data-bag src="img/bag-1000.png" alt="بسته برنج لرنج">
+      </div>
+      <div class="shop__floor"></div>
+    </div>
+
+    <div class="shop__panel">
+      <h3 data-title>برنج دورود لرستان، ۱ کیلوگرم</h3>
+      <div class="sizes-pick" role="radiogroup" aria-label="انتخاب سایز" data-sizes></div>
+      <p class="shop__note" data-note></p>
+      <div class="shop__try" data-try hidden>
+        <p>پیشنهاد ما: قبل از خرید بسته‌های بزرگ‌تر، یک بسته ۱ کیلویی را بپزید و با خیال راحت‌تر خرید کنید.</p>
+        <button type="button" data-try-btn>اول ۱ کیلویی را می‌خواهم</button>
+      </div>
+
+      <div class="shop__price">
+        <strong data-price></strong>
+        <span>تومان</span>
+        <small data-perkg></small>
+      </div>
+
+      <div class="shop__buy">
+        <div class="qty" role="group" aria-label="تعداد">
+          <button type="button" data-qty="-1" aria-label="کمتر">−</button>
+          <output data-qty-out>۱</output>
+          <button type="button" data-qty="1" aria-label="بیشتر">+</button>
+        </div>
+        <button class="btn btn--primary" type="button" data-add>افزودن به سبد خرید</button>
+      </div>
+
+      <p class="shop__desc">برنج لُرنج با آب‌های ذوب‌شده برف و در هوای خنک دورود کشت می‌شود؛ به همین دلیل طعم و عطر واقعی دارد. از شما می‌خواهیم قبل از خرید بسته ۱۰ کیلویی، یک بسته ۱ کیلویی را بپزید و بعد با خیال راحت‌تر خرید کنید.</p>
+
+      <ul class="shop__trust">
+        <li>بسته‌بندی کرافت ایستاده</li>
+        <li>محصول طبیعی</li>
+        <li>برنج دورود لرستان</li>
+        <li>پیش‌پرداخت یا پرداخت در محل</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── مقایسه سایزها ───────── -->
+<section class="lineup" id="sizes" data-theme="dark" aria-label="مقایسه سایزها">
+  <div class="lineup__head">
+    <h2>سه سایز، یک کیفیت</h2>
+    <p>روی هر بسته بزنید تا همان سایز را بخرید.</p>
+  </div>
+  <div class="lineup__row" data-lineup></div>
+</section>
+
+<!-- ───────── خرید عمده ───────── -->
+<section class="whole" id="wholesale" data-theme="dark" aria-label="خرید عمده">
+  <div class="whole__inner">
+    <div class="whole__text">
+      <h2>خرید عمده</h2>
+      <p>برای خرید از ۱۰۰ کیلو به بالا، قیمت هر کیلو پایین‌تر می‌آید.</p>
+      <ul class="tiers" data-tiers></ul>
+      <p class="whole__more">خرید بیش از ۵ تن: تماس بگیرید.</p>
+    </div>
+    <form class="whole__card" data-wh novalidate>
+      <label>مقدار (کیلوگرم)<input name="kg" inputmode="numeric" value="100"></label>
+      <div class="whole__calc"><span data-wh-per></span><strong data-wh-total></strong></div>
+      <label>نام و نام خانوادگی<input name="name" autocomplete="name"></label>
+      <label>شماره موبایل<input name="phone" inputmode="tel" autocomplete="tel"></label>
+      <label>توضیحات (اختیاری)<input name="note"></label>
+      <p class="co__err" data-wh-err role="alert"></p>
+      <button class="btn btn--primary btn--block" type="submit">ثبت درخواست خرید عمده</button>
+      <small>همکاران ما برای نهایی کردن سفارش با شما تماس می‌گیرند.</small>
+    </form>
+  </div>
+</section>
+
+<!-- ───────── محاسبه‌گر ───────── -->
+<section class="calc" id="calc" data-theme="light" aria-label="محاسبه‌گر مصرف">
+  <div class="calc__inner">
+    <div class="calc__text">
+      <h2>برای خانواده شما چقدر برنج لازم است؟</h2>
+      <p>تعداد افراد و دفعات پخت را مشخص کنید تا مصرف ماهانه و بسته مناسب را پیشنهاد بدهیم.</p>
+    </div>
+    <div class="calc__card">
+      <label class="range">
+        <span>تعداد افراد خانه <b data-people-out>۴</b></span>
+        <input type="range" min="1" max="12" value="4" data-people>
+      </label>
+      <label class="range">
+        <span>وعده برنج در هفته <b data-meals-out>۵</b></span>
+        <input type="range" min="1" max="14" value="5" data-meals>
+      </label>
+      <div class="calc__result">
+        <div class="calc__num"><b data-need>۸٫۵</b><span>کیلوگرم در ماه</span></div>
+        <p data-combo></p>
+        <button class="btn btn--primary" type="button" data-add-combo>افزودن پیشنهاد به سبد</button>
+      </div>
+      <small class="calc__foot">محاسبه با حدود ۱۰۰ گرم برنج خام برای هر نفر در هر وعده است.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── سوالات ───────── -->
+<section class="faq" id="faq" data-theme="light" aria-label="سوالات متداول">
+  <h2>سوالات پرتکرار</h2>
+  <div class="faq__list">
+    <details>
+      <summary>برنج را چطور نگهداری کنم؟</summary>
+      <p>بسته را در جای خشک و خنک نگه دارید و بعد از هر بار استفاده کاملاً ببندید.</p>
+    </details>
+    <details>
+      <summary>چرا اول بسته ۱ کیلویی را امتحان کنم؟</summary>
+      <p>طعم و عطر برنج را با یک بار پخت می‌شود فهمید. اگر پسندیدید، سراغ ۵ یا ۱۰ کیلویی بروید تا با خیال راحت‌تر خرید کرده باشید.</p>
+    </details>
+    <details>
+      <summary>قبل از پخت باید برنج را خیس کنم؟</summary>
+      <p>بله، چند بار با آب سرد بشویید و حدود دو ساعت در آب نمک خیس کنید تا دانه‌ها کشیده و جدا بپزند.</p>
+    </details>
+    <details>
+      <summary>ارسال و پرداخت چطور است؟</summary>
+      <p>پرداخت به دو صورت انجام می‌شود: پیش‌پرداخت (قبل از ارسال بسته) یا پرداخت در محل (هنگام تحویل). هزینه ارسال پیش از ثبت نهایی در سبد خرید نمایش داده می‌شود.</p>
+    </details>
+    <details>
+      <summary>برای خرید عمده چه کنم؟</summary>
+      <p>از بخش «خرید عمده» درخواست بدهید یا با شماره ۰۹۱۰۹۲۶۸۱۰۲ و تلگرام lorenj_ir@ در تماس باشید. از ۱۰۰ کیلو به بالا قیمت عمده محاسبه می‌شود.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" data-theme="dark">
+  <img class="foot__logo" src="img/logo-cream.png" alt="لُرنج">
+  <p>برنج دورود لرستان</p>
+  <p class="foot__contact" data-contact></p>
+  <small>© لُرنج</small>
+</footer>
+
+<!-- ───────── سبد خرید ───────── -->
+<div class="veil" data-veil hidden></div>
+<aside class="cart" data-cart aria-label="سبد خرید" aria-hidden="true">
+  <div class="cart__top">
+    <h3>سبد خرید</h3>
+    <button type="button" data-cart-close aria-label="بستن">✕</button>
+  </div>
+  <div class="ship">
+    <p data-ship-text></p>
+    <div class="ship__bar"><i data-ship-bar></i></div>
+  </div>
+  <ul class="cart__items" data-items></ul>
+  <p class="cart__empty" data-empty>سبد شما خالی است.</p>
+  <div class="cart__foot">
+    <div class="cart__total"><span>جمع کل</span><strong><span data-total>۰</span> تومان</strong></div>
+    <button class="btn btn--primary btn--block" type="button" data-checkout>ثبت سفارش</button>
+    <small>هزینه ارسال و روش پرداخت در مرحله بعد مشخص می‌شود.</small>
+  </div>
+  <form class="co" data-co novalidate>
+    <button type="button" class="co__back" data-co-back>‹ بازگشت به سبد</button>
+    <h4>اطلاعات تحویل سفارش</h4>
+    <label>نام و نام خانوادگی<input name="name" autocomplete="name"></label>
+    <label>شماره موبایل<input name="phone" inputmode="tel" autocomplete="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹"></label>
+    <div class="co__row">
+      <label>استان<input name="province" autocomplete="address-level1"></label>
+      <label>شهر<input name="city" autocomplete="address-level2"></label>
+    </div>
+    <label>آدرس کامل<textarea name="address" rows="2" autocomplete="street-address"></textarea></label>
+    <label>کد پستی ۱۰ رقمی<input name="postal" inputmode="numeric" maxlength="10" autocomplete="postal-code"></label>
+    <label>توضیحات (اختیاری)<input name="note"></label>
+    <fieldset class="co__pay"><legend>روش پرداخت</legend><div data-pay-list></div></fieldset>
+    <div class="co__sum" data-co-sum></div>
+    <p class="co__err" data-co-err role="alert"></p>
+    <button class="btn btn--primary btn--block" type="submit" data-co-submit>ثبت نهایی سفارش</button>
+  </form>
+  <div class="done" data-done>
+    <div class="done__tick" aria-hidden="true">✓</div>
+    <h4>سفارش شما ثبت شد</h4>
+    <p>کد پیگیری: <b data-done-code></b></p>
+    <div class="done__pay" data-done-pay></div>
+    <button class="btn btn--primary" type="button" data-done-close>بازگشت به فروشگاه</button>
+  </div>
+</aside>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<script src="js/shop-config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

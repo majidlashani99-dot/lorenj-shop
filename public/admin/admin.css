@@ -1,0 +1,24 @@
+:root{--forest:#123a27;--moss:#1f5c36;--paddy:#f5ecd7;--paper:#fbf6e9;--straw:#c79a45;--ink:#0c2015}
+*{box-sizing:border-box}body{margin:0;background:var(--paddy);color:var(--ink);font:15px/1.8 Vazirmatn,Tahoma,"Segoe UI",sans-serif}
+[hidden]{display:none!important}
+.login{min-height:100vh;display:grid;place-items:center;padding:20px}
+.login form{width:min(380px,100%);display:grid;gap:14px;padding:28px;border-radius:20px;background:var(--paper);box-shadow:0 20px 50px rgba(18,58,39,.15)}
+h1,h2{margin:0;color:var(--forest)}label{display:grid;gap:4px;font-weight:600;font-size:14px}
+input,select,textarea{padding:9px 12px;border:1.5px solid rgba(18,58,39,.3);border-radius:10px;font:inherit;background:#fff;width:100%}
+.btn,.ghost{padding:10px 20px;border-radius:999px;border:0;font:inherit;font-weight:700;cursor:pointer;background:var(--forest);color:var(--paper)}
+.ghost{background:transparent;color:inherit;border:1.5px solid currentColor;padding:6px 16px}
+.err{color:#b3261e;min-height:1.4em;margin:0}.ok{color:var(--moss)}
+.bar{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:12px 22px;background:var(--forest);color:var(--paper)}
+.bar nav{display:flex;gap:6px;flex:1;flex-wrap:wrap}.bar nav button{border:0;background:none;color:inherit;font:inherit;padding:6px 14px;border-radius:999px;cursor:pointer;opacity:.8}
+.bar nav button[aria-current=true]{background:var(--paddy);color:var(--forest);opacity:1}
+#view{padding:22px;max-width:1300px;margin:auto;display:grid;gap:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.card{padding:16px 18px;border-radius:16px;background:var(--paper)}.card small{opacity:.7}.card b{display:block;font-size:26px;color:var(--forest)}
+.wrap{overflow:auto;border-radius:16px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:760px}th,td{padding:10px 12px;text-align:right;border-bottom:1px solid rgba(18,58,39,.12);vertical-align:top}
+th{background:rgba(18,58,39,.07);font-size:13px}
+.tag{display:inline-block;padding:1px 10px;border-radius:99px;background:rgba(18,58,39,.1);font-size:12.5px}
+.tag.paid{background:#cfe8d5}.tag.no{background:#f3d8b5}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row input,.row select{width:auto;min-width:150px}
+.det{display:grid;gap:8px;padding:14px;background:rgba(18,58,39,.05)}
+.pw{max-width:420px;display:grid;gap:12px;padding:20px;border-radius:16px;background:var(--paper)}
